@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng Menu</title>
+    <style>
+.top-bar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.top-bar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+.top-bar a:hover {
+    text-decoration: underline;
+}
+.top-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+.menu-ngang {
+    background-color: #04aa6d;
+    overflow: hidden;
+}
+
+.menu-ngang ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-ngang li {
+    float: left;
+}
+
+.menu-ngang li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-ngang li a:hover {
+    background-color: #ddd;
+}
+.container {
+    display: flex;
+}
+
+.menu-doc {
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.menu-doc ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-doc li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu-doc li a:hover {
+    background-color: #555;
+    color: white;
+}
+.content {
+    padding: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(44, 42, 42);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}   
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-right">
+            <div class="dropdown">
+                <button class="dropbtn">Tutorials▾
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div> 
+              <div class="dropdown">
+                <button class="dropbtn">Exercises▾
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Certificates▾
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Services▾
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            <input type="text" placeholder="Search...">
+            <a href="#">Get Certified</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Log in</a>
+            
+        </div>
+    </div>
+
+    <nav class="menu-ngang">
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">HOW TO</a></li>
+            <li><a href="#">W3.CSS</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">BOOTSTRAP</a></li>
+            <li><a href="#">REACT</a></li>
+            <li><a href="#">MYSQL</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <nav class="menu-doc">
+            <ul>
+                <li><a href="#">HTML HOME</a></li>
+                <li><a href="#">HTML Introduction</a></li>
+                <li><a href="#">HTML Editors</a></li>
+                <li><a href="#">HTML Basic</a></li>
+                <li><a href="#">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML Headings</a></li>
+                <li><a href="#">HTML Paragraphs</a></li>
+                <li><a href="#">HTML Styles</a></li>
+                <li><a href="#">HTML Formatting</a></li>
+                <li><a href="#">HTML Quotations</a></li>
+                <li><a href="#">HTML Comments</a></li>
+                <li><a href="#">HTML Colors</a></li>
+                <li><a href="#">HTML CSS</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
